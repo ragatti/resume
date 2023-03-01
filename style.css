@@ -13,19 +13,21 @@ body {
 
 h1 {
     font-size: 3em;
-    letter-spacing: .6em;
+    letter-spacing: .4em;
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 0.8em;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     padding-bottom: 1em;
+    font-weight: 700;
 }
 
 h3 {
-    font-size: 1em;
-    padding-bottom: 1em;
+    font-size: 1.4em;
+    padding-bottom: 0.1em;
+    font-weight: 300;
 }
 
 h1,
@@ -106,7 +108,7 @@ nav {
 }
 
 .resume article p {
-    margin: 24px 0;
+    margin: 10px 0;
     position: relative;
     display: inline-block;
     color: #64748b;
@@ -118,9 +120,10 @@ nav {
     margin: 0px 30px 0px 0px;
 }
 
-.contact{
+.contact {
     text-align: left;
     font-size: 20px;
+    margin-top: 20px;
 
 }
 
@@ -145,4 +148,30 @@ nav {
 .column-right {
     flex: 70%;
     padding: 40px;
+}
+
+.conteiner {
+    padding: 40px;
+    box-sizing: border-box;
+    height: 50vh;
+}
+
+.conteiner header {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding: 15px;
+}
+
+.box {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
+.box p {
+    color: #64748b;
+    padding-top: 10px;
 }
