@@ -175,3 +175,11 @@ nav {
     color: #64748b;
     padding-top: 10px;
 }
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
