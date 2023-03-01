@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    max-width: 960px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3em;
+    letter-spacing: .6em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+h3 {
+    font-size: 1em;
+    padding-bottom: 1em;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+nav {
+    top: 0%;
+    width: 100%;
+    position: fixed;
+    max-width: 960px;
+    margin: auto;
+}
+
+.topnav {
+    padding: 22px 22px 22px 22px;
+    text-align: center;
+}
+
+.topnav ul {
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    line-height: 18px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.08);
+}
+
+.topnav ul li {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.topnav ul li a:hover {
+    padding: 12px;
+    color: #0f172a;
+}
+
+.topnav ul li a.active {
+    padding: 12px;
+    color: #0f172a;
+}
+
+.topnav ul li a {
+    margin: 8px;
+    padding: 10px;
+    color: #64748b;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.topnav p {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.resume {
+    margin-top: 90px;
+    margin-left: auto;
+    text-align: left;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.resume article header {
+    margin: 24px 0;
+    position: relative;
+    display: inline-block;
+    color: #64748b;
+}
+
+.resume article p {
+    margin: 24px 0;
+    position: relative;
+    display: inline-block;
+    color: #64748b;
+}
+
+.resume article a {
+    display: inline-block;
+    color: #64748b;
+    margin: 0px 30px 0px 0px;
+}
+
+.contact{
+    text-align: left;
+    font-size: 20px;
+
+}
+
+.row {
+    display: flex;
+}
+
+.column-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 30%;
+    padding: 5px;
+}
+
+.column-left img {
+    border-radius: 50%;
+    width: 70%;
+}
+
+
+.column-right {
+    flex: 70%;
+    padding: 40px;
+}
