@@ -24,11 +24,10 @@ function toLightMode() {
 const switcher = document.querySelector('.btn');
 
 switcher.addEventListener('click', function () {
-
+  
   var rs = getComputedStyle(r);
   var mode = rs.getPropertyValue('--mode');
   if (mode == "light") {
-    this.textContent = "dark";
     toDarkMode();
   }
   else {
@@ -37,13 +36,19 @@ switcher.addEventListener('click', function () {
   }
 });
 
-function myFunction() {
-  var x = document.getElementById("topnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+function togleMood(x) {
+  x.classList.toggle("fa fa-sun");
+}
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementsByClassName("topnav").style.top = "0";
   } else {
-    x.className = "topnav";
+    document.getElementsByClassName("topnav").style.top = "-50px";
   }
+  prevScrollpos = currentScrollPos;
 }
 
 
