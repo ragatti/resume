@@ -176,10 +176,41 @@ nav {
     padding-top: 10px;
 }
 
-footer{
+.bar {
+    width: 100%;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+    height: 22px;
+}
+
+#skills {
+    box-sizing: border-box;
+  }
+
+.skills {
+    text-align: right;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 8px;
+    color: white;
+}
+
+.html-css{width: 40%; background-color: #0f172a; border-radius: 10px; height: 20px;  transition: background-color 0.5s ease;}
+.php{width: 25%; background-color: #0f172a; border-radius: 10px; height: 20px;}
+.js{width: 30%; background-color: #0f172a; border-radius: 10px; height: 20px;}
+.angular{width: 10%; background-color: #0f172a; border-radius: 10px; height: 20px;}
+.dj{width: 40%; background-color: #0f172a; border-radius: 10px; height: 20px;}
+
+.py{width: 80%; background-color: #0f172a; border-radius: 10px; height: 20px;}
+.keras{width: 45%; background-color: #0f172a; border-radius: 10px; height: 20px;}
+.pyt{width: 50%; background-color: #0f172a; border-radius: 10px; height: 20px;}
+.tf{width: 38%; background-color: #0f172a; border-radius: 10px; height: 20px;}
+
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    width: 100%;
 }
