@@ -9,7 +9,7 @@ function toDarkMode() {
   r.style.setProperty('--medium-color', '#a1a1aa');
   r.style.setProperty('--bg-color', '#18181b');
   r.style.setProperty('--bg-bar', '#27272a');
-  r.style.setProperty('--shadow-color', '#a1a1aa4d');
+  r.style.setProperty('--shadow-color', '#a1a1a733');
   r.style.setProperty('--mode', 'dark');
   //alert("The value of --mode is: " + rs.getPropertyValue('--mode'))
 }
