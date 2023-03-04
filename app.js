@@ -24,7 +24,7 @@ function toLightMode() {
 const switcher = document.querySelector('.btn');
 
 switcher.addEventListener('click', function () {
-  
+
   var rs = getComputedStyle(r);
   var mode = rs.getPropertyValue('--mode');
   if (mode == "light") {
@@ -36,7 +36,7 @@ switcher.addEventListener('click', function () {
   }
 });
 
-function togleMood(x) {
+function toggleMood(x) {
   x.classList.toggle("fa fa-sun");
 }
 

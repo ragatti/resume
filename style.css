@@ -308,6 +308,6 @@ footer {
     width: 50px;
     border-radius: 50%;
     border: none;
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
+    color: var(--main-color);
+    background-color: var(--bg-bar);
 }
