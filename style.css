@@ -3,7 +3,8 @@
     --medium-color: #71717a;
     --bg-bar: #f4f4f5;
     --bg-color: white;
-    --mode: "light"
+    --mode: "light";
+    --shadow-color: #18181b4d;
 }
 
 * {
@@ -49,7 +50,7 @@ h4 {
 
 nav {
     top: 0%;
-    width: 60%;
+    width: 80%;
     position: fixed;
     max-width: 960px;
     margin: auto;
@@ -58,7 +59,6 @@ nav {
 .topnav {
     padding: 22px 22px 22px 22px;
     text-align: center;
-    transition: top 0.3s;
 }
 
 .topnav ul {
@@ -70,9 +70,8 @@ nav {
     border-radius: 50px;
     border: 2px;
     background-color: var(--bg-bar);
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-out;
-    z-index: 3;
+    box-shadow: 2px 2px 5px 1px var(--shadow-color);
+    /*transition: all 0.3s ease-out;*/
 }
 
 .topnav ul li {
@@ -96,21 +95,54 @@ nav {
     text-decoration: none;
 }
 
+button {
+    height: 38,5px;
+}
+
 .btn {
-    position: right;
-    margin: 0;
-    display: inline-block;
-    padding: 0px;
-    border-radius: 0px;
-    border: 0px;
-    background-color: var(--bg-bar);
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-out;
-    z-index: 3;
+    position: fixed;
+    margin: auto 0;
+    line-height: 18px;
+    top: 26px;
+    left: 85%;
+    height: 38,5px;
+    width: 40px;
+    border-radius: 50px;
+    border: 2px;
     font-size: 1.2em;
-    cursor: pointer;
-    align-items: right;
-    justify-content: right;
+    color: var(--medium-color);
+    background-color: var(--bg-bar);
+    box-shadow: 2px 2px 5px 1px var(--shadow-color);
+}
+/*
+.btn {
+    position: absolute;
+    top: 10px;
+    width: 4%;
+    position: fixed;
+    margin: auto;
+    margin: 0;
+    line-height: 18px;
+    border-radius: 50px;
+    
+    color: var(--medium-color);
+    background-color: var(--bg-bar);
+    display: inline-block;
+    margin-bottom: 16px;
+    
+    
+}
+*/
+.btn i{
+    padding: 10px
+}
+
+.btn i:hover {
+    color: var(--main-color);
+}
+
+.topnav ul li a.active {
+    color: var(--main-color);
 }
 
 .topnav p {
@@ -125,7 +157,7 @@ nav {
     text-align: left;
     position: relative;
     background-color: var(--bg-color);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 var(--shadow-color);
     z-index: 1;
 }
 
@@ -298,16 +330,4 @@ footer {
     text-align: center;
     width: 100%;
     color: var(--main-color);
-}
-
-.btn {
-    position: absolute;
-    top: 20px;
-    left: 250px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: none;
-    color: var(--main-color);
-    background-color: var(--bg-bar);
 }
