@@ -24,24 +24,24 @@ function toLightMode() {
 }
 
 const switcher = document.querySelector('.btn');
+//var cnt = 1;
 
 switcher.addEventListener('click', function () {
-
   var rs = getComputedStyle(r);
   var mode = rs.getPropertyValue('--mode');
-  if (mode == "light") {
+  //console.log(`${cnt++}° click: ${mode}`);
+  let el = document.getElementById("theme-mod-icon");
+  if (mode == 'light') {
     toDarkMode();
+    el.classList.replace("fa-moon","fa-sun");
   }
   else {
     toLightMode();
-
+    el.classList.replace("fa-sun","fa-moon");
   }
 });
 
-function toggleMood(x) {
-  x.classList.toggle("fa fa-sun");
-}
-
+/**
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
@@ -90,3 +90,5 @@ function move() {
     }
   }
 }
+
+*/
